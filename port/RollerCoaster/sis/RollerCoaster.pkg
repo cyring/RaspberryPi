@@ -1,0 +1,24 @@
+;
+; Installation file for $$Root$$ application
+;
+;Languages
+&EN
+;
+; UID is the app's UID
+;
+#{"RollerCoaster2005"},(0x06EE0477),1,0,0
+;
+;Supports Series 60 v 2.0
+;This line indicates that this installation is for the Series 60 platform v2.0
+;This line must appear _exactly_ as shown below in the sis file
+;If this line is missing or incorrect, the sis file will not be able
+;to be installed on Series 60 v2.0 platforms
+(0x101F7960), 0, 0, 0, {"Series60ProductID"} 
+;
+; Four files to install
+;
+"..\..\..\\Epoc32\release\armi\urel\RollerCoaster.app"		  -"!:\system\apps\RollerCoaster\RollerCoaster.app"
+"..\..\..\\Epoc32\data\z\system\apps\RollerCoaster\RollerCoaster.rsc"         -"!:\system\apps\RollerCoaster\RollerCoaster.rsc"
+"..\..\..\\Epoc32\data\z\system\apps\RollerCoaster\RollerCoaster_caption.rsc" -"!:\system\apps\RollerCoaster\RollerCoaster_caption.rsc"
+"..\..\..\\Epoc32\data\z\system\apps\RollerCoaster\RollerCoaster.aif"         -"!:\system\apps\RollerCoaster\RollerCoaster.aif"
+"..\..\..\\Epoc32\Release\ARMI\UREL\libGLES_CM.dll"  -"!:\system\apps\RollerCoaster\libGLES_CM.dll"

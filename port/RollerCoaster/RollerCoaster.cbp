@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="RollerCoaster" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/RollerCoaster" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/RollerCoaster" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="/opt/vc/include/" />
+			<Add directory="/opt/vc/include/interface/vcos/pthreads/" />
+			<Add directory="/opt/vc/include/interface/vmcs_host/linux/" />
+			<Add directory="inc/" />
+		</Compiler>
+		<Linker>
+			<Add library="vcos" />
+			<Add library="bcm_host" />
+			<Add library="GLESv2" />
+			<Add library="EGL" />
+			<Add directory="/opt/vc/lib/" />
+		</Linker>
+		<Unit filename="inc/pillar.h" />
+		<Unit filename="inc/point.h" />
+		<Unit filename="inc/roller.h" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/pillar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/point.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/roller.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

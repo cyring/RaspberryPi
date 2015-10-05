@@ -1,0 +1,18 @@
+/*
+* ============================================================================
+*  Name     : bld.inf
+*  Part of  : RollerCoaster
+*  Created  : 28.12.2004 by Plusplus
+*  Description:
+*	 This file provides the information required for building the
+*    whole of a RollerCoaster.
+*  Version  :
+*  Copyright: 2004 Plusplus (plusplus AT free.fr)
+* ============================================================================
+*/
+
+
+PRJ_MMPFILES
+
+RollerCoaster.mmp
+
