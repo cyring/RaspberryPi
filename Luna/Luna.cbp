@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Luna" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Luna" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Luna" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-march=core2" />
+			<Add option="-std=c++0x" />
+			<Add option="-Wall" />
+			<Add option="-pthread" />
+			<Add directory="/usr/include/ClanLib-2.3" />
+		</Compiler>
+		<Linker>
+			<Add option="-pthread" />
+			<Add library="clan23App" />
+			<Add library="clan23GL" />
+			<Add library="GL" />
+			<Add library="Xrender" />
+			<Add library="clan23Display" />
+			<Add library="X11" />
+			<Add library="png" />
+			<Add library="jpeg" />
+			<Add library="freetype" />
+			<Add library="z" />
+			<Add library="bz2" />
+			<Add library="fontconfig" />
+			<Add library="clan23Core" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
